@@ -530,9 +530,11 @@ class socksocket(_BaseSocket):
         else:
             # Resolve locally
             addresses = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM, socket.IPPROTO_TCP, socket.AI_ADDRCONFIG)
+            for a in addresses:
+               if a[0] == socket.AF_INET:
+                  target_addr = a
             # We can't really work out what IP is reachable, so just pick the
             # first.
-            target_addr = addresses[0]
             family = target_addr[0]
             host = target_addr[4][0]
 
