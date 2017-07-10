@@ -1,9 +1,14 @@
 PySocks
 =======
 
-Updated and semi-actively maintained version of [SocksiPy](http://socksipy.sourceforge.net/), with bug fixes and extra features.
+PySocks lets you send traffic through SOCKS and HTTP proxy servers. It is a modern fork of [SocksiPy](http://socksipy.sourceforge.net/) with bug fixes and extra features.
 
-Acts as a drop-in replacement to the socket module.
+Acts as a drop-in replacement to the socket module. Seamlessly configure SOCKS proxies for any socket object by calling `socket_object.set_proxy()`.
+
+Status Update
+-------------
+
+I no longer have the time to actively work on this project. I will gladly accept thoughtful pull requests and continue to update here and on PyPI in response to PRs, but I won't be putting in any changes of my own other than version bumps. If anyone would like to take the project off of my hands, please email me or create an issue. Thanks.
 
 ----------------
 

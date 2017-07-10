@@ -23,6 +23,9 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
-MANIFEST.in
 setup.cfg
+MANIFEST
+/.tox/
+/3proxy.conf
+/.cache/
+/.env/
