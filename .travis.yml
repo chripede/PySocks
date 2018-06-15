@@ -7,10 +7,9 @@ os:
 
 env:
   - TOX_ENV=py27
-  - TOX_ENV=py33
   - TOX_ENV=py34
 
-# For python3.5 and python3.6 the base python versions
+# For python3.5, and python3.6 the base python versions
 # should be 3.5 and 3.6 accordingly to avoid InterpreterNotFound error
 matrix:
   allow_failures:
